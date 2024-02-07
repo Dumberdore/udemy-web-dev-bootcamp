@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+	      name="viewport">
+	<meta content="ie=edge" http-equiv="X-UA-Compatible">
+	<title>Forms Demo</title>
+</head>
+<body>
+<h1>Forms Demo</h1>
+<form action="/tacos">
+	<label for="username">Enter Username</label>
+	<input id="username" name="username" placeholder="Username" type="text">
+	<br>
+	<p>
+		<button type="button">Do Not Submit!</button>
+	</p>
+	<label for="pass">Password</label>
+	<input id="pass" name="password" placeholder="Enter your password" type="password">
+	<br>
+	<label for="color">Select a color</label>
+	<input id="color" name="color" type="color">
+	<br>
+	<label for="num">Enter Number</label>
+	<input id="num" max="170" min="1" name="number" placeholder="Enter your number" type="number">
+	<p>
+		<button>Submit</button>
+	</p>
+</form>
+
+<br>
+<form action="https://www.reddit.com/search">
+	<label for="r-query">
+		<input id="r-query" name="q" type="text">
+	</label>
+	<button>Search Reddit</button>
+</form>
+<br>
+<form action="https://www.google.com/search">
+	<label for="g-query">
+		<input id="g-query" name="q" type="text">
+	</label>
+	<button>Search Google</button>
+</form>
+
+<br>
+<form action="https://www.youtube.com/results">
+	<label for="y-query">
+		<input id="y-query" name="search_query" type="text">
+	</label>
+	<button>Search YouTube</button>
+</form>
+
+<h2>More Inputs!!</h2>
+<form>
+	<input id="agree" name="agree_tos" type="checkbox">
+	<label for="agree">I agree to everything</label>
+	<p>
+		<label for="xs">XS:</label>
+		<input id="xs" name="size" type="radio" value="xs">
+		<label for="s">S:</label>
+		<input id="s" name="size" type="radio" value="s">
+		<label for="m">M:</label>
+		<input id="m" name="size" type="radio" value="m">
+	</p>
+
+	<p>
+		<label for="meal">Please select protein</label>
+		<select id="meal" name="meal">
+			<option value="chicken">Chicken</option>
+			<option selected value="steak">Steak</option>
+		</select>
+	</p>
+
+	<p>
+		<label for="cheese">Amount of cheese</label>
+		<input id="cheese" max="100" min="1" name="cheese" step="10" type="range">
+	</p>
+
+	<p>
+		<label for="requests">Text Area</label>
+		<textarea cols="20" id="requests" name="Requests?" placeholder="Type Something..." rows="5"></textarea>
+	</p>
+	<button>Submit</button>
+</form>
+
+</body>
+</html>
